@@ -8,20 +8,53 @@
 <body>
     <header>
         <nav>
-            <ul>
-               <li><a href="../index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="services.html">Services</a></li>
-               <li><a href="enquiry.html">Enquiry</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="../index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="services.html">Services</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <!-- Enquiry form goes here -->
+        <h1>Enquiry Form</h1>
+        <img src="../assets/images/exterior-cleaning.jpg" alt="Car detailing service" width="400">
+        <p>Fill in your details and we'll get back to you within 24 hours.</p>
+
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Tell us who you are."><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Where we can reply to you."><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Your contact number."><br><br>
+
+            <label for="service">Service Type:</label><br>
+            <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="full-detail">Full Detail - R650</option>
+                <option value="interior">Interior Only - R350</option>
+                <option value="exterior">Exterior Only - R400</option>
+            </select><br><br>
+
+            <label for="date">Preferred Date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" placeholder="Where should we come?"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your car and any special requests."></textarea><br><br>
+
+            <input type="submit" value="Send Enquiry">
+        </form>
     </main>
+
     <footer>
-        <!-- Footer content goes here -->
+        <p>Opening hours: Mon-Sat 7am-6pm</p>
+        <p>WhatsApp: 082 123 4567 | Email: info@shinemobile.co.za</p>
+        <p>&copy; 2026 Shine Mobile Valet. All rights reserved.</p>
     </footer>
 </body>
 </html>
