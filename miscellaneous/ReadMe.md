@@ -34,7 +34,7 @@ Shine Mobile Valet is a professional mobile car detailing service operating in J
 
 ## References
 - Unsplash. (2026). *Car Detailing Photos*. Available at: https://unsplash.com/s/photos/car-detailing (Accessed: 14 August 2026).
-- W3Schools. (2026). *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 14 August 2026).
+
 
 ---
 
