@@ -58,3 +58,39 @@ ul {
 li {
     margin-bottom: 6px;
 }
+/* header and nav */
+header {
+    background-color: var(--navy);
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 1rem;
+}
+
+/* footer */
+footer {
+    background-color: var(--navy);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 6px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
