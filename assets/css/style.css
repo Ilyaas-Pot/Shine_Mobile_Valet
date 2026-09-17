@@ -22,3 +22,39 @@ body {
     padding: 20px;
     line-height: 1.6;
 }
+/* headings - montserrat from my proposal */
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--navy);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
