@@ -126,3 +126,40 @@ hr {
     border-top: 1px solid #ddd;
     margin: 20px 0;
 }
+/* forms */
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--navy);
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* submit buttons */
+input[type="submit"] {
+    background-color: var(--orange);
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: auto;
+}
