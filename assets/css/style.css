@@ -163,3 +163,34 @@ input[type="submit"] {
     cursor: pointer;
     width: auto;
 }
+/* nav link hover + active */
+nav a:hover {
+    background-color: var(--orange);
+    border-radius: 4px;
+}
+
+nav a:active {
+    background-color: #c45f0e;
+}
+
+nav a:focus {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
+}
+
+/* button hover + active */
+input[type="submit"]:hover {
+    background-color: #c45f0e;
+}
+
+input[type="submit"]:active {
+    background-color: #a85008;
+}
+
+/* form focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--navy);
+    outline: none;
+}
