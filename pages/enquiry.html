@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry - Shine Mobile Valet</title>
+    <!-- stylesheet link (one folder up) -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- header nav -->
     <header>
         <nav>
             <a href="../index.html">Home</a> |
@@ -17,21 +21,33 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
+    <!-- enquiry form page -->
     <main>
+
         <h1>Enquiry Form</h1>
+
+        <!-- image at top of the page -->
         <img src="../assets/images/exterior-cleaning.jpg" alt="Car detailing service" width="400">
+
         <p>Fill in your details and we'll get back to you within 24 hours.</p>
 
+        <!-- booking / enquiry form -->
         <form>
+
+            <!-- customer name -->
             <label for="name">Your Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Tell us who you are."><br><br>
 
+            <!-- customer email -->
             <label for="email">Email Address:</label><br>
             <input type="email" id="email" name="email" placeholder="Where we can reply to you."><br><br>
 
+            <!-- customer phone -->
             <label for="phone">Phone Number:</label><br>
             <input type="tel" id="phone" name="phone" placeholder="Your contact number."><br><br>
 
+            <!-- which service they want -->
             <label for="service">Service Type:</label><br>
             <select id="service" name="service">
                 <option value="">Select a service</option>
@@ -40,23 +56,31 @@
                 <option value="exterior">Exterior Only - R400</option>
             </select><br><br>
 
+            <!-- preferred date for booking -->
             <label for="date">Preferred Date:</label><br>
             <input type="date" id="date" name="date"><br><br>
 
+            <!-- where we should come -->
             <label for="address">Address:</label><br>
             <input type="text" id="address" name="address" placeholder="Where should we come?"><br><br>
 
+            <!-- extra message from customer -->
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="5" placeholder="Tell us about your car and any special requests."></textarea><br><br>
 
+            <!-- submit button -->
             <input type="submit" value="Send Enquiry">
+
         </form>
+
     </main>
 
+    <!-- footer contact details -->
     <footer>
         <p>Opening hours: Mon-Sat 7am-6pm</p>
         <p>WhatsApp: 082 123 4567 | Email: info@shinemobile.co.za</p>
         <p>&copy; 2026 Shine Mobile Valet. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
