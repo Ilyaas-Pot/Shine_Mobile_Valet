@@ -32,6 +32,21 @@ Shine Mobile Valet is a professional mobile car detailing service operating in J
 
 ---
 
+## Part 2 Details (CSS Styling and Responsive Design)
+
+### Completed Tasks:
+- Created external stylesheet (assets/css/style.css)
+- Linked stylesheet to all 5 HTML pages
+- Added CSS reset and colour palette
+- Added typography (Montserrat + Open Sans)
+- Added header, navigation and footer styles
+- Added main content, image and link styles
+- Added form and button styles
+- Added hover, focus and active pseudo-classes
+- Added media queries for tablet and mobile
+- Made images responsive
+---
+
 ## References
 - Unsplash. (2026). *Car Detailing Photos*. Available at: https://unsplash.com/s/photos/car-detailing (Accessed: 14 August 2026).
 
