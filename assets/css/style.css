@@ -1,0 +1,24 @@
+/* shine mobile valet - stylesheet */
+
+/* remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* my colour palette (from my proposal) */
+:root {
+    --navy: #1B2A47;
+    --light-grey: #F0F2F5;
+    --orange: #E8751A;
+    --dark-grey: #333333;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    padding: 20px;
+    line-height: 1.6;
+}
