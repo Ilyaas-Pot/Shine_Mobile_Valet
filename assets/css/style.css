@@ -255,3 +255,55 @@ img {
         margin: 8px 0;
     }
 }
+/* final polish - button and card styles */
+
+/* make book now links look like buttons */
+main a[href="enquiry.html"] {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+main a[href="enquiry.html"]:hover {
+    background-color: #c45f0e;
+    text-decoration: none;
+}
+
+/* wrap each service in a card */
+main h2 {
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+/* add more space between service sections */
+main hr {
+    margin: 30px 0;
+    border-top: 1px dashed #ddd;
+}
+
+/* service images get a card feel */
+main img {
+    background-color: var(--light-grey);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* make the whole main box breathe a bit more */
+main {
+    padding: 35px 30px;
+}
+
+/* small screen tweak for buttons */
+@media (max-width: 480px) {
+    main a[href="enquiry.html"] {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
