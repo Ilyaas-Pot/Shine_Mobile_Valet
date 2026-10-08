@@ -32,41 +32,49 @@
 
         <p>Fill in your details and we'll get back to you within 24 hours.</p>
 
-        <!-- booking / enquiry form -->
-        <form>
+        <!-- pricing reference so users know the costs before submitting -->
+        <h2>Service Prices</h2>
+        <ul>
+            <li>Full Detail - R650</li>
+            <li>Interior Only - R350</li>
+            <li>Exterior Only - R400</li>
+        </ul>
+
+        <!-- booking / enquiry form - opens email when submitted -->
+        <form action="mailto:info@shinemobile.co.za" method="post" enctype="text/plain">
 
             <!-- customer name -->
             <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Tell us who you are."><br><br>
+            <input type="text" id="name" name="name" placeholder="Tell us who you are." required><br><br>
 
             <!-- customer email -->
             <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" placeholder="Where we can reply to you."><br><br>
+            <input type="email" id="email" name="email" placeholder="Where we can reply to you." required><br><br>
 
-            <!-- customer phone -->
+            <!-- customer phone (must be 10 digits) -->
             <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="Your contact number."><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="Your 10 digit contact number." pattern="[0-9]{10}" required><br><br>
 
             <!-- which service they want -->
             <label for="service">Service Type:</label><br>
-            <select id="service" name="service">
+            <select id="service" name="service" required>
                 <option value="">Select a service</option>
-                <option value="full-detail">Full Detail - R650</option>
-                <option value="interior">Interior Only - R350</option>
-                <option value="exterior">Exterior Only - R400</option>
+                <option value="Full Detail - R650">Full Detail - R650</option>
+                <option value="Interior Only - R350">Interior Only - R350</option>
+                <option value="Exterior Only - R400">Exterior Only - R400</option>
             </select><br><br>
 
             <!-- preferred date for booking -->
             <label for="date">Preferred Date:</label><br>
-            <input type="date" id="date" name="date"><br><br>
+            <input type="date" id="date" name="date" required><br><br>
 
             <!-- where we should come -->
             <label for="address">Address:</label><br>
-            <input type="text" id="address" name="address" placeholder="Where should we come?"><br><br>
+            <input type="text" id="address" name="address" placeholder="Where should we come?" required><br><br>
 
             <!-- extra message from customer -->
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your car and any special requests."></textarea><br><br>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your car and any special requests." required></textarea><br><br>
 
             <!-- submit button -->
             <input type="submit" value="Send Enquiry">
@@ -77,13 +85,13 @@
 
     <!-- footer contact details -->
     <footer>
-    <p>Opening hours: Mon-Sat 7am-6pm</p>
-    <p>WhatsApp: 082 123 4567 | Email: info@shinemobile.co.za</p>
-    <div class="social-links">
-        <a href="#">Facebook</a> | <a href="#">Instagram</a>
-    </div>
-    <p>&copy; 2026 Shine Mobile Valet. All rights reserved.</p>
-</footer>
+        <p>Opening hours: Mon-Sat 7am-6pm</p>
+        <p>WhatsApp: 082 123 4567 | Email: info@shinemobile.co.za</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2026 Shine Mobile Valet. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
