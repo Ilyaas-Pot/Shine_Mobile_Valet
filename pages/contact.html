@@ -50,7 +50,7 @@
 
         <!-- simple contact form - opens email when submitted -->
         <h2>Send a Message</h2>
-        <form action="mailto:info@shinemobile.co.za" method="post" enctype="text/plain">
+        <form id="contact-form>
 
             <!-- sender name -->
             <label for="name">Your Name:</label><br>
@@ -73,6 +73,9 @@
             <!-- message box -->
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="5" placeholder="Type your full message here..." required></textarea><br><br>
+             
+            <p id="form-error" style="color: red; display: none; font-weight: bold;">Please fill in all fields.</p>
+            <p id="form-success" style="color: green; display: none; font-weight: bold;">Message sent successfully!</p>
 
             <!-- submit -->
             <input type="submit" value="Send Message">
@@ -90,6 +93,11 @@
         </div>
         <p>&copy; 2026 Shine Mobile Valet. All rights reserved.</p>
     </footer>
-
+     
+    <!-- Load EmailJS library -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Load my custom script -->
+       <script src="../js/main.js"></script>
+       
 </body>
 </html>
