@@ -96,4 +96,45 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         });
     }
+      // ==========================================
+    // 3. DYNAMIC CONTENT: SERVICE SEARCH FILTER
+    // ==========================================
+    let searchInput = document.getElementById('search-input');
+    
+    if (searchInput) {
+        searchInput.addEventListener('keyup', function() {
+            let filter = searchInput.value.toLowerCase();
+            let cards = document.querySelectorAll('.service-card');
+
+            cards.forEach(function(card) {
+                let text = card.innerText.toLowerCase();
+                if (text.includes(filter)) {
+                    card.style.display = ""; // show
+                } else {
+                    card.style.display = "none"; // hide
+                }
+            });
+        });
+    }
 });
+   
+   // ==========================================
+// 4. INTERACTIVE ELEMENTS: LIGHTBOX
+// ==========================================
+// (These go outside the DOMContentLoaded block)
+function openLightbox(imageSrc) {
+    let lightbox = document.getElementById('lightbox');
+    let lightboxImg = document.getElementById('lightbox-img');
+    
+    if (lightbox && lightboxImg) {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = imageSrc;
+    }
+}
+
+function closeLightbox() {
+    let lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.style.display = 'none';
+    }
+}
