@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ilyaas-pot.github.io/Shine_Mobile_Valet/sitemap.xml
