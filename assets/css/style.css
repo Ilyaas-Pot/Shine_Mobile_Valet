@@ -489,6 +489,9 @@ footer .social-links a:hover {
     font-size: 1.8rem;
     cursor: pointer;
 }
+nav {
+    display: block; 
+}
 
 /* Desktop layout */
 .nav-links {
