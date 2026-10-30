@@ -478,3 +478,52 @@ footer .social-links a:hover {
         font-size: 1.5rem;
     }
 }
+/* --- Hamburger Menu Styles --- */
+
+/* Hide the button on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Desktop layout */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    /* Show the burger */
+    .hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Hide the links by default */
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* This class will be added by JavaScript to show the menu */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Make the links look good when stacked */
+    .nav-links a {
+        padding: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        display: block; /* Fixes the layout */
+    }
+}

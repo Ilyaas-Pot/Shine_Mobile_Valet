@@ -116,6 +116,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    // ==========================================
+    // 5. INTERACTIVE ELEMENTS: MOBILE HAMBURGER MENU
+    // ==========================================
+    let hamburgerBtn = document.getElementById('hamburger-btn');
+    let navLinks = document.getElementById('nav-links');
+
+    if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', function() {
+            // Toggles the 'active' class on and off
+            navLinks.classList.toggle('active');
+        });
+    }
 });
    
    // ==========================================

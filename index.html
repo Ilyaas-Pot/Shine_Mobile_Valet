@@ -15,12 +15,19 @@
     <!-- header with navigation to all pages -->
     <header>
         <nav>
-            <!-- links to each page -->
-            <a href="index.html">Home</a> |
-            <a href="pages/about.html">About</a> |
-            <a href="pages/services.html">Services</a> |
-            <a href="pages/enquiry.html">Enquiry</a> |
-            <a href="pages/contact.html">Contact</a>
+            <!-- Hamburger button for mobile -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+                ☰
+            </button>
+            
+            <!-- Wrap your existing links in this div -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a> |
+                <a href="pages/about.html">About</a> |
+                <a href="pages/services.html">Services</a> |
+                <a href="pages/enquiry.html">Enquiry</a> |
+                <a href="pages/contact.html">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -67,5 +74,10 @@
     <p>&copy; 2026 Shine Mobile Valet. All rights reserved.</p>
 </footer>
 
+     <!-- Load EmailJS library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Load my custom script -->
+    <script src="assets/js/main.js"></script>
+    
 </body>
 </html>
