@@ -480,20 +480,16 @@ footer .social-links a:hover {
 }
 /* --- Hamburger Menu Styles --- */
 
-/* Hide the button on desktop */
 .hamburger {
     display: none;
     background: none;
     border: none;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
-}
-nav {
-    display: block; 
+    padding: 5px;
 }
 
-/* Desktop layout */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -505,28 +501,37 @@ nav {
 @media (max-width: 768px) {
     /* Show the burger */
     .hamburger {
-        display: block;
+        display: block !important;
         margin: 0 auto;
     }
 
-    /* Hide the links by default */
+    /* FORCE the links to hide by default */
     .nav-links {
-        display: none; 
+        display: none !important; 
+    }
+
+    /* Show them ONLY when JS adds the 'active' class */
+    .nav-links.active {
+        display: flex !important;
         flex-direction: column;
         width: 100%;
         text-align: center;
         margin-top: 15px;
     }
 
-    /* This class will be added by JavaScript to show the menu */
-    .nav-links.active {
-        display: flex;
-    }
-
-    /* Make the links look good when stacked */
+    /* Style the links when they drop down */
     .nav-links a {
-        padding: 10px;
+        padding: 12px;
+        display: block;
         border-bottom: 1px solid rgba(255,255,255,0.1);
-        display: block; /* Fixes the layout */
+        border-right: none; /* removes the pipe separators if they are borders */
+    }
+    
+    /* If you typed the "|" manually in HTML, this hides them on mobile */
+    .nav-links {
+        font-size: 0; /* Hides text nodes like "|" */
+    }
+    .nav-links a {
+        font-size: 1rem; /* Brings the link text back to normal size */
     }
 }
